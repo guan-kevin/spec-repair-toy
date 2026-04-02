@@ -9,7 +9,7 @@ public class Main {
         test.add("foo");
         test.add("bar");
         try {
-            Thread.sleep(15000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt(); // restore interrupted status
         }
