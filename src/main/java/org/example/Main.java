@@ -8,6 +8,11 @@ public class Main {
         ArrayList<String> test = new ArrayList<>();
         test.add("foo");
         test.add("bar");
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt(); // restore interrupted status
+        }
         if (test.size() > 0) {
             Iterator<String> i = test.iterator();
             i.next();
